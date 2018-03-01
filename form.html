@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/form.bundle.min.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<title>Title</title>
+</head>
+<body>
+	<div class="menu-header menu__header--close">
+	<ul class="menu">
+		<div class="menu__block-1">
+			<li class="menu__item"><a href="index.html">ГЛАВНАЯ</a><a class="menu__close"  href="https://www.google.com"></a></li>
+			<li class="menu__item"><a href="gallery.html">ФОТО И ВИДЕО</a></li>
+		</div>
+		<div class="menu__block-2">
+			<li class="menu__item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
+			<li class="menu__item"><a href="#academy">HTML ACADEMY</a></li>
+		</div>
+	</ul>
+</div>
+	<header class="head">
+		<a href="#" class="head__logo">
+			<picture class="head__logo-all">
+				<source srcset="img/logotype-desktop.png" media="(min-width: 1024px)">
+				<source srcset="img/logotyle-mobile.svg">
+				<img src="img/logotyle-mobile.svg" alt="Logo">
+			</picture>
+			<img class="head__logo-ie" src="img/logotype-desktop.png">
+		</a>
+		<a class="head__menu" href="#" name="head"></a>
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="container__image">
+				<div class="container__text"></div>
+			</div>
+			<div class="review">
+				<h2 class="review__caption">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+				<p class="review__text">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
+			</div>
+		</div>
+		<form class="form">
+			<fieldset class="form__introduce">
+				<legend class="form__caption">ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА:</legend>
+				<label for="first-name">ИМЯ:</label>
+				<input id="first-name" class="form__name" type="text" placeholder="Петр">
+				<label for="second-name">ФАМИЛИЯ:</label>
+				<input id="second-name" class="form__name" type="text" placeholder="Иванов">
+				<label for="third-name">ОТЧЕСТВО:</label>
+				<input id="third-name" class="form__name" type="text" placeholder="Александрович">
+			</fieldset >
+			<fieldset class="form__contact">
+				<legend class="form__caption">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
+				<label for="telephone"><span>КОНТАКТНЫЙ</span>ТЕЛЕФОН:</label>
+				<input id="telephone" class="form__phone" type="tel" placeholder="Введите телефон">
+				<label for="telephone">Ошибка, перепроверьте номер</label>
+				<label for="email">ЭЛЕКТРОННАЯ ПОЧТА:</label>
+				<input id="email" class="form__email" type="text" placeholder="Введите e-mail">
+			</fieldset>
+			<fieldset class="form__review">
+				<legend class="form__caption">ВАШЕ ОБЩЕЕ ВПЕЧЕТЛЕНИЕ:</legend>
+				<input id="good" class="form__radio" type="radio"  name="review" checked>
+				<label for="good">Скорее положительное</label>
+				<input id="bad" class="form__radio " type="radio" name="review">
+				<label for="bad">Скорее отрицательное</label>
+				<input id="no" class="form__radio" type="radio" name="review">
+				<label for="no">Затрудняюсь ответить</label>
+			</fieldset>
+			<fieldset class="form__visited">
+				<legend class="form__caption">ПОСЕЩЕННЫЕ <br>ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
+				<input id="check1" class="form__checkbox" type="checkbox" checked>
+				<label for="check1">Мост Дьявола</label>
+				<input id="check2" class="form__checkbox" type="checkbox" checked>
+				<label for="check2">Слайд-парк</label>
+				<input id="check3" class="form__checkbox" type="checkbox">
+				<label for="check3">Гора-Колокол</label>
+				<input id="check4" class="form__checkbox" type="checkbox" checked>
+				<label for="check4">Красные скалы</label>
+			</fieldset>
+			<fieldset class="form__comment">
+				<legend class="form__caption">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
+				<textarea class="form__text"  placeholder="Опишите подробно все свои восторги"></textarea>
+				<input type="button" class="button" value="ОТПРАВИТЬ ОТЗЫВ">
+				<span class="form__marcam">* — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</span>
+			</fieldset>
+		</form>
+	</main>
+	<footer class="footer">
+		<h2 class="footer__caption">#VISITSEDONA</h2>
+		<div class="footer social">
+			<a class="social__twiter"></a>
+			<a class="social__facebook"></a>
+			<a class="social__youtube"></a>
+		</div>
+		<div class="footer academy">
+			<p class="academy__caption">РАЗРАБОТАНО</p>
+			<a class="academy__logo " name="academy"></a>
+		</div>
+	</footer>
+	<script src="//localhost:35729/livereload.js"></script>
+	<script src="js/Form.js"></script>
+
+</body>
+</html>
